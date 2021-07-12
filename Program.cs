@@ -6,21 +6,33 @@ namespace My_Awesome_Program_2
     {
         static void Main(string[] args)
         {
-            string[] movies = new string[4];
-            Console.WriteLine("type in four words: ");
+            Console.Write("How many students are in your class: ");
 
-            for (int i = 0; i < movies.Length; i++)
+
+            int studentCount = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine("Please input the names of the students: ");
+
+
+            string[] students = new string[studentCount];
+
+
+            for (int i = 0; i < studentCount; i++)
             {
-            movies[i] = Console.ReadLine();
+                students[i] = Console.ReadLine();
             }
 
-            Console.WriteLine("\nHere they are alphabetically: ");
 
-            Array.Sort(movies);
+            Console.WriteLine("--------------");
 
-            for (int i = 0; i < movies.Length; i++)
+
+            Array.Sort(students);
+
+
+            for (int i = 0; i < studentCount; i++)
             {
-                Console.WriteLine(movies[i]);
+                Console.WriteLine(students[i]);
             }
 
            // Wait Before Closing

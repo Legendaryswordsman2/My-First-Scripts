@@ -4,10 +4,10 @@ namespace My_Awesome_Program_2
 {
     class Wizard
     {
-       public string name;
-       public string favouriteSpell;
-       public int spellSlots;
-       public float experience;
+       string name;
+       string favouriteSpell;
+       int spellSlots;
+       float experience;
 
        public Wizard(string _name, string _favouriteSpell)
        {
